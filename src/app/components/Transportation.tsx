@@ -8,10 +8,10 @@ import { motion } from 'framer-motion';
 import { Button } from '@/components/ui/button';
 import { Dialog, DialogContent, DialogTitle } from '@/components/ui/dialog';
 
-const images = ['airport.png', 'library.png', 'toystore.png', 'pool.png', 'park.png'];
-const choices = [['airport', 'library', 'toystore'], ['library', 'park', 'pool'], ['toystore', 'pool', 'airport'], ['pool', 'library', 'park'], ['park', 'toystore', 'airport']];
+const images = ['bus.png', 'ferry.png', 'taxi.png', 'subway.png', 'trolley.png'];
+const choices = [['bus', 'train', 'ferry'], ['ferry', 'taxi', 'bus'], ['taxi', 'bus', 'subway'], ['subway', 'taxi', 'bus'], ['trolley', 'bus', 'subway']];
 
-export default function GuessTheImage() {
+export default function Transportation() {
   const [index, setIndex] = useState(0);
   const [score, setScore] = useState(0);
   const [lives, setLives] = useState(3);
